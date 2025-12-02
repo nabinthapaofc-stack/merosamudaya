@@ -6,6 +6,7 @@ import VacancyForm, { VacancyFormData } from '@/components/VacancyForm';
 import SOSButton from '@/components/SOSButton';
 import SOSModal from '@/components/SOSModal';
 import BottomNav from '@/components/BottomNav';
+import BackgroundPattern from '@/components/BackgroundPattern';
 import { mockVacancies, Vacancy } from '@/data/mockData';
 import { toast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
@@ -37,7 +38,8 @@ const OrganizerDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background pb-20 md:pb-0">
+    <div className="min-h-screen bg-background pb-20 md:pb-0 relative overflow-hidden">
+      <BackgroundPattern />
       <Header showNav={false} />
       
       <main className="container mx-auto px-4 py-6">
