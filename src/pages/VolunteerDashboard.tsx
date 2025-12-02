@@ -5,6 +5,7 @@ import VacancyCard from '@/components/VacancyCard';
 import SOSButton from '@/components/SOSButton';
 import SOSModal from '@/components/SOSModal';
 import BottomNav from '@/components/BottomNav';
+import BackgroundPattern from '@/components/BackgroundPattern';
 import { mockVacancies } from '@/data/mockData';
 import { toast } from '@/hooks/use-toast';
 
@@ -19,7 +20,8 @@ const VolunteerDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background pb-20 md:pb-0">
+    <div className="min-h-screen bg-background pb-20 md:pb-0 relative overflow-hidden">
+      <BackgroundPattern />
       <Header showNav={false} />
       
       <main className="container mx-auto px-4 py-6">
